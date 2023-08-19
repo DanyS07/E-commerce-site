@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link type="text/css" rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" >
+
+    <link href=<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/45d850eb77.js" crossorigin="anonymous"></script>
+
+    <meta name="description" content="{% block metadescription %}{% endblock %}">
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body style="font-family: 'Roboto', sans-serif;font-family: 'Roboto Condensed', sans-serif;">
+<div class="containerhttps://kit.fontawesome.com/a076d05399.js">
+
+    {% include 'header.html' %}
+    {% include 'nav.html' %}
+
+    {% block content %}
+
+    {% endblock %}
+
+
+    {% include 'footer.html' %}
+    <script src="{% static 'js/popper.min.js' %}" ></script>
+    <script src="{% static 'js/bootstrap.min.js' %}" ></script>
+</div>
+
+</body>
+</html>
